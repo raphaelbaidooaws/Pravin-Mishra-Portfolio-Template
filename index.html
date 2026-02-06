@@ -602,11 +602,19 @@
       <div class="footer-bottom">
         <p>© <span id="year"></span> Pravin Mishra. All rights reserved.</p>
         <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
-        <p>Pravin Mishra Portfolio v1.0 — Deployed on <03-Feb-2026> — By Raphael Baidoo </p>
-        <p> God bless you Sir </p>
-      </div> 
+        <p>Pravin Mishra Portfolio v1.0 — Deployed on  <span id="deployDate"> </span> — By Raphael Baidoo </p>
 
-    </div>
+        <p> God bless you Sir </p>
+        
+      
+      <script>
+  const d = new Date();
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  document.getElementById("deployDate").textContent = 
+      String(d.getDate()).padStart(2,'0') + " " + months[d.getMonth()] + " " + d.getFullYear();
+</script>
+
+    
   </footer>
 
 
